@@ -9,7 +9,66 @@
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 </head>
-<body>
+
+<body class="bg-light">
+
+<div class="container mt-5">
+  <h2 class="mb-4">Registro</h2>
+  <form id="registroForm" novalidate>
+    
+  
+    <div class="mb-3">
+      <label for="nombreCompleto" class="form-label">Nombre completo</label>
+      <input type="text" class="form-control" id="nombreCompleto" required>
+      <div class="invalid-feedback">Campo requerido, sin números.</div>
+    </div>
+
+    
+    <div class="row">
+      <div class="col-md-3 mb-3">
+        <input type="text" class="form-control" id="nombre" placeholder="Nombre" required>
+        <div class="invalid-feedback">Campo requerido, sin números.</div>
+      </div>
+      <div class="col-md-3 mb-3">
+        <input type="text" class="form-control" id="segundoNombre" placeholder="Segundo nombre">
+        <div class="invalid-feedback">Sin números.</div>
+      </div>
+      <div class="col-md-3 mb-3">
+        <input type="text" class="form-control" id="apellido" placeholder="Apellido" required>
+        <div class="invalid-feedback">Campo requerido, sin números.</div>
+      </div>
+      <div class="col-md-3 mb-3">
+        <input type="text" class="form-control" id="segundoApellido" placeholder="Segundo apellido">
+        <div class="invalid-feedback">Sin números.</div>
+      </div>
+    </div>
+
+   
+    <div class="mb-3">
+      <label for="correo" class="form-label">Correo electrónico</label>
+      <input type="email" class="form-control" id="correo" required>
+      <div class="invalid-feedback">Ingrese un correo válido.</div>
+    </div>
+
+   
+    <div class="mb-3">
+      <label for="password" class="form-label">Contraseña</label>
+      <input type="password" class="form-control" id="password" required>
+      <div class="invalid-feedback">
+        Mínimo 8 caracteres, con mayúscula, minúscula, número y carácter especial.
+      </div>
+    </div>
+
+    
+    <div class="mb-3">
+      <label for="confirmPassword" class="form-label">Confirmar contraseña</label>
+      <input type="password" class="form-control" id="confirmPassword" required>
+      <div class="invalid-feedback">Las contraseñas deben coincidir.</div>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Enviar</button>
+  </form>
+</div>
   
 </body>
 </html>
